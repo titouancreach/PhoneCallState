@@ -73,7 +73,7 @@ public class PhoneState_iPlugin implements EventChannel.StreamHandler {
                         phoneCallOn = true;
                         break;
                 }
-                events.success(phoneCallOn.toString());
+                events.success(phoneCallOn.toString() + ";" + phoneNumber);
             }
         };
     }
